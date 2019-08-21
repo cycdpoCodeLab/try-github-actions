@@ -1,6 +1,6 @@
 {
   "name": "try-github-actions",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Try github actions",
   "scripts": {
     "test": "jest"

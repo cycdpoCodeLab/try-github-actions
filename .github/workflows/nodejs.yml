@@ -1,4 +1,4 @@
-name: Node CI
+name: Node Test CI
 on:
   # run on push events to master
   push:
@@ -19,7 +19,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: [8.x, 10.x, 12.x]
+        node-version: [lts, latest]
         os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
