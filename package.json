@@ -1,0 +1,24 @@
+{
+  "name": "try-github-actions",
+  "version": "0.0.1",
+  "description": "Try github actions",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cycjimmy/try-github-actions.git"
+  },
+  "keywords": [
+    "actions"
+  ],
+  "author": "cycjimmy <cycjimmy@gmail.com> (https://github.com/cycjimmy)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cycjimmy/try-github-actions/issues"
+  },
+  "homepage": "https://github.com/cycjimmy/try-github-actions#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}

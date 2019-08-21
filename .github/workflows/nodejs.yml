@@ -1,0 +1,29 @@
+name: Node CI
+on:
+  # run on push events to master
+  push:
+    branches:
+      - master
+
+  # run on pull_request events that target the master branch
+  pull_request:
+    branches:
+      - master
+
+  # run every day of the week from Monday - Friday at 02:00
+  schedule:
+    - cron: 0 2 * * 1-5
+
+jobs:
+  test:
+    # runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [8.x, 10.x, 12.x]
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+
+    steps:
+      - run: |
+          npm install -g yarn
+          yarn install
+          npm test
