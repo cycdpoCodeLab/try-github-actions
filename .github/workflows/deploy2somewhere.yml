@@ -15,5 +15,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: deploy-test
-          FOLDER: dist
+          FOLDER: deploy-dir
           BUILD_SCRIPT: npm install -g yarn && yarn install
