@@ -10,9 +10,9 @@ on:
     branches:
       - master
 
-  # run every day of the week from Monday - Friday at 02:00
+  # run every day of the week from Monday - Saturday at 02:00
   schedule:
-    - cron: 0 2 * * 1-5
+    - cron: 0 2 * * 1-6
 
 jobs:
   test:

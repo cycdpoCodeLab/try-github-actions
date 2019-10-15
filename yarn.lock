@@ -139,6 +139,94 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@cycjimmy/awesome-js-funcs@^1.0.0", "@cycjimmy/awesome-js-funcs@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@cycjimmy/awesome-js-funcs/-/awesome-js-funcs-1.0.1.tgz#1df6919189dae7588b34b108a130ae63e678bc3e"
+  integrity sha512-7eCq7ESyn9AdlhbkB829O+LaX/uB3euu9qvsjJDmDnsOikUqrNZAzGj4ICNtrnNsRB4DR31GtODfn3fKtg7Ong==
+
+"@cycjimmy/awesome-swiper@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@cycjimmy/awesome-swiper/-/awesome-swiper-2.0.1.tgz#fa80bdd1cea00a7ff66fb5176444b1c0f12a23b0"
+  integrity sha512-EVmKK9ff8NXPePrNr78dw7eOGYuIAFL5AzH/oBAVZsYgVOdoXj5tq5Jqj9NL8JR8Y3/R9fk+y4MIK+0xCZ0Jow==
+  dependencies:
+    "@cycjimmy/awesome-js-funcs" "^1.0.1"
+    "@cycjimmy/sass-lib" "^0.1.0"
+
+"@cycjimmy/canvas-snow@^1.0.0":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@cycjimmy/canvas-snow/-/canvas-snow-1.0.4.tgz#d0989f40c58462a6b4ea9ef0435b0e4ff71df030"
+  integrity sha512-HDl0SagbusoFl4NLjnvEAl6h/jlKkb7iA/IFrkNE+45DaCD61K8k5gzybWIsAPIzMROwiUOejymWIWYVaoWyLQ==
+  dependencies:
+    "@cycjimmy/awesome-js-funcs" "^1.0.0"
+
+"@cycjimmy/h5-audio-controls@^2.0.0":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@cycjimmy/h5-audio-controls/-/h5-audio-controls-2.0.2.tgz#21e8da4c15da78bc3442312378e91cdd968d34c9"
+  integrity sha512-+8mguLGIRGCCpn8dGRH/XcNKYYjo6Irp4OF5KWQ9Y7lLdb7ik989TNewK11mudTTlmU/6mltESVe2lIBeP6MCA==
+  dependencies:
+    "@cycjimmy/awesome-js-funcs" "^1.0.0"
+    "@cycjimmy/sass-lib" "^0.1.0"
+
+"@cycjimmy/h5-preloader@^1.0.0":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@cycjimmy/h5-preloader/-/h5-preloader-1.0.1.tgz#f6c55cbda7288132c9c311f7754789b6a439bf05"
+  integrity sha512-sXwfdYxakJSvt9WaO6hvllPGB5y7zdyohXoW/geCdo3SufgaYrpooMXf/w3qq7dr50B0on6nVvtKwfi2j5Z6RQ==
+  dependencies:
+    "@cycjimmy/awesome-js-funcs" "^1.0.0"
+
+"@cycjimmy/h5-video-player@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@cycjimmy/h5-video-player/-/h5-video-player-2.0.0.tgz#a770d1a3793ce9b2cfd7d7e1c06c54223f0926be"
+  integrity sha512-E9KJivj+fZwazYJcwhX6qfTWyOYnbBwI8NAGm6A4t6e+ZAcOumBkJMvSJW6OjkIrpB2woFvKNvfmDTzRJvnARg==
+  dependencies:
+    "@cycjimmy/awesome-js-funcs" "^1.0.1"
+    "@cycjimmy/sass-lib" "^0.1.0"
+
+"@cycjimmy/hello-github-package-npm@^0.0.8":
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/@cycjimmy/hello-github-package-npm/-/hello-github-package-npm-0.0.8.tgz#dc47e156d059a1703018caeae73776c51cca4821"
+  integrity sha512-W28ibOfgUsDUBpxFh3s/PQmI/OpxU9v5GMHzX/SthcowAQ2Hcd34dsyih4jnZP9uzO/JKjiuC1FNge8RhBH2yQ==
+
+"@cycjimmy/jsmpeg-player@^4.0.0":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@cycjimmy/jsmpeg-player/-/jsmpeg-player-4.0.1.tgz#4d003cb8af1a4383bc917f8e71e2030f3d156c89"
+  integrity sha512-tbLX/ZZ/scG6TFbYQHJ7GmdYppC0FLtS46wR42M+4ycFlapd5ZGzwDNCyWTZH+lYAaf6no+EIpUgElSBueWepg==
+  dependencies:
+    "@cycjimmy/awesome-js-funcs" "^1.0.1"
+    "@cycjimmy/sass-lib" "^0.1.0"
+
+"@cycjimmy/mini-xhr@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@cycjimmy/mini-xhr/-/mini-xhr-2.0.1.tgz#6ed8fb0ce5b64dcf1f5ecac0baaac71dfaeefa75"
+  integrity sha512-zrpDRBy4TgbLpUqKIcM/5JMzfkswe1t3p4CsUWkJCYRdfTFg37XCRbQ4ScdNjcX+ypOAAHh60+bf07Y9GzLcmw==
+
+"@cycjimmy/sass-lib@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@cycjimmy/sass-lib/-/sass-lib-0.1.0.tgz#4b534ce1ba2e61f0efb184c42a64e74dd60fe952"
+  integrity sha512-Oli6KvYFIpvRxrD8ntfETMi+YtRQEgrZkFv6JPs9PING/B1kr8AhBNbcw9MklA2HapSX70/3dn3BmsVfLBzEjg==
+
+"@cycjimmy/simulate-chatting@^1.0.0":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@cycjimmy/simulate-chatting/-/simulate-chatting-1.0.2.tgz#206cf9a1ff9d292ac3b8d754ddaca633595c2a88"
+  integrity sha512-5SZnEO69JGrC2uDipGvWmQiYkqU0v0+X4XSR7en3Huf4PF9jpH+Zht5itT2PEAb4yaS6Q4BIGz9TU9u884gW1w==
+  dependencies:
+    "@cycjimmy/awesome-js-funcs" "^1.0.0"
+    "@cycjimmy/sass-lib" "^0.1.0"
+
+"@cycjimmy/swiper-animation@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@cycjimmy/swiper-animation/-/swiper-animation-3.0.0.tgz#c451b8a57f03f9b2fce67331f2e304a18b450d49"
+  integrity sha512-t4/klaFqIzRPF8WXVe9HU7z9pZNaBD10+nGAEB2V9Hj68j344UCjddBIBtlgRC6VYLDvyIJc9gIJYO6Yt0rSVA==
+  dependencies:
+    "@cycjimmy/awesome-js-funcs" "^1.0.1"
+
+"@cycjimmy/weixin-share@^2.0.0":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@cycjimmy/weixin-share/-/weixin-share-2.0.1.tgz#9dd3a1ea14c5092cca62d4ecbf4331d9159a467f"
+  integrity sha512-M2Np4kavSXBYwtukJDhjujDfhjKRqRhAe7o+CqSTxoX2kgDEOlVgZvAspqrK8QoMv9sYyA8H2wbNAIzx9NGEug==
+  dependencies:
+    "@cycjimmy/awesome-js-funcs" "^1.0.1"
+
 "@jest/console@^24.7.1", "@jest/console@^24.9.0":
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/@jest/console/-/console-24.9.0.tgz#79b1bc06fb74a8cfb01cbdedf945584b1b9707f0"
