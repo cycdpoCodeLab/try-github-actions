@@ -3,7 +3,7 @@ name: Hello world
 on: [push]
 
 jobs:
-  build:
+  hello:
     runs-on: ubuntu-latest
 
     steps:
