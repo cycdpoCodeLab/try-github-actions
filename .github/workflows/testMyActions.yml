@@ -1,0 +1,13 @@
+name: Test My Actions
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        uses: cycjimmy/hello-world-javascript-action@master
+        with:
+          who-to-greet: 'Mona the Octocat'
+
