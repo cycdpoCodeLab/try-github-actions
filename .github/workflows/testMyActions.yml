@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello
-        uses: cycjimmy/hello-world-javascript-action@master
+        uses: cycdpoCodeLab/hello-world-javascript-action@master
         with:
           who-to-greet: 'Mona the Octocat'
 
