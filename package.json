@@ -19,19 +19,19 @@
   },
   "homepage": "https://github.com/cycdpoCodeLab/try-github-actions#readme",
   "dependencies": {
-    "@cycjimmy/awesome-swiper": "^2.0.0",
-    "@cycjimmy/canvas-snow": "^1.0.0",
-    "@cycjimmy/h5-audio-controls": "^2.0.0",
-    "@cycjimmy/h5-preloader": "^1.0.0",
-    "@cycjimmy/h5-video-player": "^2.0.0",
-    "@cycjimmy/hello-github-package-npm": "^0.0.8",
-    "@cycjimmy/jsmpeg-player": "^4.0.0",
-    "@cycjimmy/mini-xhr": "^2.0.0",
-    "@cycjimmy/simulate-chatting": "^1.0.0",
-    "@cycjimmy/swiper-animation": "^3.0.0",
-    "@cycjimmy/weixin-share": "^2.0.0"
+    "@cycjimmy/awesome-swiper": "^2.1.0",
+    "@cycjimmy/canvas-snow": "^1.0.5",
+    "@cycjimmy/h5-audio-controls": "^3.4.1",
+    "@cycjimmy/h5-preloader": "^3.0.0",
+    "@cycjimmy/h5-video-player": "^2.1.0",
+    "@cycjimmy/hello-github-package-npm": "^4.0.1",
+    "@cycjimmy/jsmpeg-player": "^5.0.1",
+    "@cycjimmy/mini-xhr": "^4.1.0",
+    "@cycjimmy/simulate-chatting": "^1.0.3",
+    "@cycjimmy/swiper-animation": "^4.1.2",
+    "@cycjimmy/weixin-share": "^5.1.2"
   },
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^27.1.0"
   }
 }
