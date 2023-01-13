@@ -4,11 +4,13 @@ on:
   push:
     branches:
       - master
+      - main
 
   # run on pull_request events that target the master branch
   pull_request:
     branches:
       - master
+      - main
 
   # run every day of the week from Monday - Saturday at 02:00
   schedule:
@@ -19,14 +21,14 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        node-version: [12.x, 14.x]
-        os: [ubuntu-latest, windows-latest, macOS-latest]
+        node: [ '12', '16', '18' ]
+        os: [ ubuntu-latest, windows-latest, macOS-latest ]
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: ${{ matrix.node }}
       - run: npm ci
       - run: npm test
 

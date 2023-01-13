@@ -4,22 +4,21 @@ on:
   push:
     branches:
       - master
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          persist-credentials: false
+        uses: actions/checkout@v3
 
       - name: Pre-built
         run: |
           npm ci
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: deploy-test
-          FOLDER: deploy-dir
+          branch: deploy-test
+          folder: deploy-dir
+          token: ${{ secrets.ACCESS_TOKEN }}
