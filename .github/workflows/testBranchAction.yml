@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  logs:
+  branch-action:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
