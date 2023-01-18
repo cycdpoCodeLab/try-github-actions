@@ -13,5 +13,14 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: log github
-        run: echo ${{ JSON.stringify(github) }}
+        run: |
+          echo repository: ${{ github.repository }}
+          echo workspace: ${{ github.workspace }}
+          echo action: ${{ github.action }}
+          echo job: ${{ github.job }}
+          echo event_name: ${{ github.event_name }}
+          echo ref: ${{ github.ref }}
+          echo head_ref: ${{ github.head_ref }}
+          echo ref_type: ${{ github.ref_type }}
+          echo ref_name: ${{ github.ref_name }}
 
