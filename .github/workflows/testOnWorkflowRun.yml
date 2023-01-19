@@ -1,0 +1,20 @@
+name: Test on workflow_run
+
+on:
+  workflow_run:
+    workflows: [Set environment variables]
+    types:
+      - completed
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo Test on workflow_run
+
+      - name: Use the value in past workflow
+        run: |
+          echo "${{ env.action_state }}"
+          echo "${{ env.action_state_0 }}"
+
