@@ -22,11 +22,6 @@ jobs:
           echo "state=1" >> $GITHUB_OUTPUT
           echo "state0=0" >> $GITHUB_OUTPUT
 
-      - name: Save local state
-        run: |
-          echo 1 > ./state
-          echo 0 > ./state0
-
       - name: Use the value directly
         run: |
           echo "${{ env.action_state }}"
@@ -34,10 +29,26 @@ jobs:
           echo "${{ steps.output-variables.outputs.state }}"
           echo "${{ steps.output-variables.outputs.state0 }}"
 
+  save_local_state:
+    name: save_local_state
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Save local state
+        run: |
+          echo 1 > ./state
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: state
+          path: /
+
   use:
     name: use
     runs-on: ubuntu-latest
-    needs: [ set ]
+    needs: [ set, save_local_state ]
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -56,6 +67,4 @@ jobs:
           script: |
             const fs = require('fs');
             const state = fs.readFileSync('./state');
-            const state0 = fs.readFileSync('./state0');
             console.log(state);
-            console.log(state0);
