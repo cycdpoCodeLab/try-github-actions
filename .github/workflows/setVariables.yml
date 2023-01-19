@@ -1,4 +1,4 @@
-name: Set environment variables
+name: Set variables
 
 on:
   push:
@@ -8,15 +8,20 @@ jobs:
     name: set
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Set environment variables
         run: |
           echo "action_state=1" >> $GITHUB_ENV
           echo "action_state_0=0" >> $GITHUB_ENV
+
       - name: Set output variables
         id: output-variables
         run: |
           echo "state=1" >> $GITHUB_OUTPUT
           echo "state0=0" >> $GITHUB_OUTPUT
+
       - name: Use the value directly
         run: |
           echo "${{ env.action_state }}"
@@ -27,8 +32,11 @@ jobs:
   use:
     name: use
     runs-on: ubuntu-latest
-    needs: [set]
+    needs: [ set ]
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: Use the value in past job(Failure)
         run: |
           echo "${{ env.action_state }}"

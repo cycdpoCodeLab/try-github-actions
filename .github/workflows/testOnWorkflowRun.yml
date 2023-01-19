@@ -2,14 +2,13 @@ name: Test on workflow_run
 
 on:
   workflow_run:
-    workflows: [Set environment variables]
+    workflows: [Set variables]
     types:
       - completed
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
       - run: echo Test on workflow_run
 
