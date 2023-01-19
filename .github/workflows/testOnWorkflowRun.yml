@@ -13,7 +13,7 @@ jobs:
     steps:
       - run: echo Test on workflow_run
 
-      - name: Use the value in past workflow
+      - name: Use the value in past workflow(Failure)
         run: |
           echo "${{ env.action_state }}"
           echo "${{ env.action_state_0 }}"
