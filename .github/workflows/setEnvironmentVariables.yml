@@ -1,0 +1,19 @@
+name: Set environment variables
+
+on:
+  push:
+
+jobs:
+  set:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set environment variables
+        run: |
+          echo "action_state=1" >> $GITHUB_ENV
+          echo "action_state_0=0" >> $GITHUB_ENV
+      - name: Use the value
+        run: |
+          echo "${{ env.action_state }}"
+          echo "${{ env.action_state_0 }}"
+
