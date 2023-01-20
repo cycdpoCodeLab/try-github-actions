@@ -45,10 +45,9 @@ jobs:
                artifact_id: matchArtifact.id,
                archive_format: 'zip',
             });
-            console.log(Buffer.from(download.data));
 
-#            const fs = require('fs');
-#            fs.writeFileSync(`${process.env.GITHUB_WORKSPACE}/state.zip`, Buffer.from(download.data));
+            const fs = require('fs');
+            fs.writeFileSync(`${process.env.GITHUB_WORKSPACE}/state.zip`, Buffer.from(download.data));
 
 #      - name: Unzip artifact
 #        run: unzip state.zip
