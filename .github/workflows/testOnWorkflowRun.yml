@@ -39,15 +39,13 @@ jobs:
               return artifact.name == "state"
             })[0];
 
-            console.log(matchArtifact);
-
             const download = await github.rest.actions.downloadArtifact({
                owner: context.repo.owner,
                repo: context.repo.repo,
                artifact_id: matchArtifact.id,
                archive_format: 'zip',
             });
-            console.log(download);
+            console.log(Buffer.from(download.data));
 
 #            const fs = require('fs');
 #            fs.writeFileSync(`${process.env.GITHUB_WORKSPACE}/state.zip`, Buffer.from(download.data));
