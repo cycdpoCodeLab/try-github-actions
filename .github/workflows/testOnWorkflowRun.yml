@@ -57,9 +57,16 @@ jobs:
 
       - name: Get state
         uses: actions/github-script@v6
+        id: get-state
+        result-encoding: string
         with:
           script: |
             const fs = require('fs');
             const state = Number(fs.readFileSync('./state'));
             console.log(state);
+            return state;
+
+      - name: Get state result
+        run: echo "${{steps.get-state.outputs.result}}"
+
 
