@@ -38,12 +38,13 @@ jobs:
 
       - name: Save local state
         run: |
-          echo 1 > ./state
+          mkdir -p ./test
+          echo 1 > ./test/state
 
       - uses: actions/upload-artifact@v3
         with:
           name: state
-          path: ./
+          path: test/
 
   use:
     name: use

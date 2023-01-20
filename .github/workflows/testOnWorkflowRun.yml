@@ -10,6 +10,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - run: echo Test on workflow_run
 
       - name: Use the value in past workflow(Failure)
