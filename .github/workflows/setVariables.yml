@@ -75,12 +75,12 @@ jobs:
           script: |
             console.log(context);
 
-#            const allArtifacts = await github.rest.actions.listWorkflowRunArtifacts({
-#               owner: context.payload.repository.owner,
-#               repo: context.payload.repository.repo,
-#               run_id: context.runId,
-#            });
-#            console.log(allArtifacts);
+            const allArtifacts = await github.rest.actions.listWorkflowRunArtifacts({
+               owner: context.payload.repository.owner,
+               repo: context.payload.repository.repo,
+               run_id: context.runId,
+            });
+            console.log(allArtifacts);
 
 #      - name: Download artifact
 #        uses: actions/github-script@v6
