@@ -62,7 +62,7 @@ jobs:
           result-encoding: string
           script: |
             const fs = require('fs');
-            const state = Number(fs.readFileSync('./state'));
+            const state = fs.readFileSync('./state');
             console.log(state);
             return state;
 
