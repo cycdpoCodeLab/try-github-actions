@@ -24,7 +24,7 @@
     "@cycjimmy/canvas-snow": "^3.0.2",
     "@cycjimmy/config-lib": "^3.2.1",
     "@cycjimmy/h5-audio-controls": "^5.0.3",
-    "@cycjimmy/h5-pages": "^4.3.0",
+    "@cycjimmy/h5-pages": "^4.3.1",
     "@cycjimmy/h5-preloader": "^5.0.3",
     "@cycjimmy/h5-video-player": "^3.0.1",
     "@cycjimmy/hello-github-package-npm": "^6.2.7",
