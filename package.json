@@ -30,7 +30,7 @@
     "@cycjimmy/hello-github-package-npm": "^6.2.9",
     "@cycjimmy/jsmpeg-player": "^6.0.5",
     "@cycjimmy/mini-xhr": "^7.0.0",
-    "@cycjimmy/sass-lib": "^2.2.0",
+    "@cycjimmy/sass-lib": "^2.2.1",
     "@cycjimmy/scroller": "^3.0.2",
     "@cycjimmy/semantic-release-action": "^3.1.1",
     "@cycjimmy/simulate-chatting": "^2.0.2",
