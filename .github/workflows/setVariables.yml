@@ -41,7 +41,7 @@ jobs:
           mkdir -p ./test
           echo 1 > ./test/state
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: state
           path: test/
